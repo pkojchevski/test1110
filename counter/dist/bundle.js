@@ -1,0 +1,1 @@
+(()=>{"use strict";var e={};function o(e){let o=e||0;return[()=>(console.log(o),o),()=>{o++}]}e.d=(o,t)=>{for(var r in t)e.o(t,r)&&!e.o(o,r)&&Object.defineProperty(o,r,{enumerable:!0,get:t[r]})},e.o=(e,o)=>Object.prototype.hasOwnProperty.call(e,o);const[t,r]=o(1);t(),r(),t();const[n,c]=o(10);c(),t(),n(),r(),t(),n()})();

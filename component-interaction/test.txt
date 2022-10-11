@@ -1,0 +1,10 @@
+
+
+There are 4 methods to share data between components in angular:
+
+- Parent to Child: Sharing Data via Input
+- Child to Parent: Sharing Data via ViewChild
+     cons: Child won’t be available until after the view has been initialized. 
+           This means we need to implement the AfterViewInit lifecycle hook to receive the data from the child.
+- Child to Parent: Sharing Data via Output() and EventEmitter
+- Unrelated Components: Sharing Data with a Service

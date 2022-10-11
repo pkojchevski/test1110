@@ -1,0 +1,15 @@
+1. 
+    - div does not have closing tag 
+      separate template for html should be used, instead of template literal,
+       where this type of errors will be showed by IDE
+    - calling service in constructor
+        in constructor simple inilization code should be placed
+        calling services should be in ngOnInit lifecycle
+    - Using function in html template
+        function is executed every time Angular change detection runs. 
+        inside or outside of component
+        should be used pipes or manually adding check in ngOnChanges if user.name changes
+    - there is no error catching if component is loaded but username does not exists
+    - there is no unsubscribe from the observable
+            best way is to use observable directly in html template with async key
+
