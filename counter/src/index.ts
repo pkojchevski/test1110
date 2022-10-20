@@ -1,19 +1,19 @@
-export function counter(n?: number) {
-  let counter = n || 0;
+export function counter(n?: number): [() => {}, () => void] {
+  let counter: number = n === undefined ? 0 : n;
 
   const get = (): number => {
     console.log(counter);
     return counter;
   };
 
-  const next = () => {
+  const next = (): void => {
     counter++;
   };
 
   return [get, next];
 }
 
-const [getA, nextA] = counter(1);
+const [getA, nextA] = counter(-5);
 getA(); // 1
 nextA();
 getA(); // 2
